@@ -1,3 +1,42 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #1f2028;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main{
+    /* display: flex;
+    flex-direction: column; */
+    width: 60%;
+    margin: auto;
+    align-items: center;
+    position: absolute;
+    right: 80px;
+    top: 10px;
+}
+
+main h3, main span{
+    color: #fafafa;
+}
+
+main h3{
+    padding-bottom: 20px;
+}
+
+#start-button{
+    padding: 1rem;
+    background-color: #fafafa;
+    border-radius: 1rem;
+    border: none;
+    margin-bottom: 40px;
+}
+
 .container{
     display: flex;
 }
@@ -5,10 +44,10 @@
 .grid {
     width: 200px;
     height: 400px;
-    background-color: yellow;
+    background-color: rgb(184, 226, 219);
     display: flex;
     flex-wrap: wrap;
-   
+    border-radius: 5px;
   }
 .grid div{
     height: 20px;
@@ -22,12 +61,49 @@
     height: 80px;
     display: flex;
     flex-wrap: wrap;
-    background-color: yellow;
+    background-color: rgb(184, 226, 219);
     margin-left: 50px;
+    border-radius: 5px;
 }
 .mini-grid div{
     width: 20px;
     height: 20px;
+}
+
+.keyboard{
+    background-color: #1f2028;
+    width: 210px;
+    height: 140px;
+    margin-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15rem;
+}
+
+.keyboard div{
+    width: 70px;
+    height: 70px;
+}
+
+.keyboard div.arrow{
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rebeccapurple;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.keyboard div.arrow span{
+    font-size: 1.2rem;
+    color: #1f2028;
+    opacity: .9;
+}
+.keyboard div.arrow p{
+    text-align: center;
+    font-size: 13px;
 }
 /* section{
     display: flex;
